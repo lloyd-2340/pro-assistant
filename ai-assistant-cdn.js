@@ -10027,9 +10027,9 @@
                 box-shadow: 1px 1px ${5 + 2 * h}px ${2 * h}px ${n.color}, inset 0px 0px 10px 0px rgba(0,0,0,0.1);
                 }
 
-                @media (min-width: 1366px) and (max-width: 1600px) {
+                @media (max-width: 1600px) {
                     #vapi-icon-container {
-                        width: 185px !important;
+                        width:185px !important;
                     }
 
                     #vapi-support-btn{
@@ -10040,54 +10040,27 @@
                         height: 60px !important;
                     }
                         
-                    #vapi-icon-container img{
-                        width: 100% !important;
-                        height: 165px !important;
-                    }
-
                     #vapi-icon-container #name-container{
                         width: 100px !important;
                         padding: 4px 0px !important;
                     }
-
-                    #vapi-icon-container #call-icon {
-                        width: 40px !important;
-                        height: 40px !important;
-                    }
-
-                    #vapi-icon-container #call-icon img{
-                        width: 16px !important;
-                        height: 16px !important;
-                    }
-                }
-
-                @media (max-width: 430px) {
-                    #vapi-icon-container {
-                        width:220px !important;
-                    }
-
-                    #vapi-support-btn{
-                        height: 265px !important;
-                    }
-
-                    #vapi-support-btn.vapi-btn-is-loading {
-                        height: 60px !important;
-                    }
                         
                     #vapi-icon-container img{
                         width: 100% !important;
-                        height: 230px !important;
-                    }
-
-                    #vapi-icon-container #call-icon {
-                        width: 40px !important;
-                        height: 40px !important;
+                        height: 165px !important;
                     }
 
                     #vapi-icon-container #call-icon img{
                         width: 20px !important;
                         height: 20px !important;
                     }
+
+                    #vapi-icon-container #call-icon{
+                        width: 40px !important;
+                        height: 40px !important;
+                    }
+
+
                 }
 
       `;
@@ -10251,7 +10224,7 @@
                                         k.textContent = `${t}:${i}`;
                                     }, 1e3);
                                     let w = document.createElement("div");
-                                    (w.id = "name-container")
+                                    (w.id = "name-container"),
                                     (w.textContent = "Audree"),
                                         Object.assign(w.style, {
                                             position: "absolute",
